@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Healthy Life Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1 class="main-title">Healthy Life Tracker</h1>
+
+    <p class="quote">
+        "Take care of your body."
+    </p>
+
+    <div class="cards">
+
+        <!-- Mood Tracker -->
+        <div class="card">
+
+            <h2>Mood Tracker</h2>
+
+            <button onclick="showMood('Happy 😊')">😊</button>
+
+            <button onclick="showMood('Sad 😔')">😔</button>
+
+            <button onclick="showMood('Tired 😴')">😴</button>
+
+            <button onclick="showMood('Angry 😡')">😡</button>
+
+            <p id="moodResult"></p>
+
+        </div>
+
+        <!-- BMI Calculator -->
+        <div class="card">
+
+            <h2>BMI Calculator</h2>
+
+            <input type="number" id="height" placeholder="Height in cm">
+
+            <input type="number" id="weight" placeholder="Weight in kg">
+
+            <button onclick="calculateBMI()">Calculate BMI</button>
+
+            <p id="bmiResult"></p>
+
+        </div>
+
+        <!-- Water Tracker -->
+        <div class="card">
+
+            <h2>Water Tracker</h2>
+
+            <button onclick="addWater()">+1 Glass</button>
+
+            <button onclick="resetWater()">Reset</button>
+
+            <p id="waterResult">
+                You drank 0 glasses today
+            </p>
+
+        </div>
+
+        <!-- Health Tips -->
+        <div class="card">
+
+            <h2>Health Tips</h2>
+
+            <div class="tip-box">
+
+                ✅ Drink 8 glasses of water daily <br><br>
+
+                ✅ Sleep at least 8 hours <br><br>
+
+                ✅ Exercise regularly <br><br>
+
+                ✅ Eat healthy food <br><br>
+
+                ✅ Reduce stress and relax
+
+            </div>
+
+        </div>
+
+        <!-- Exercise Timer -->
+        <div class="card">
+
+            <h2>Exercise Timer</h2>
+
+            <button onclick="startTimer()">
+                Start 60s Timer
+            </button>
+
+            <button onclick="resetTimer()">
+                Reset
+            </button>
+
+            <p id="timerResult">
+                60 seconds remaining
+            </p>
+
+        </div>
+        <!-- Daily Health Challenge -->
+<div class="card">
+
+    <h2>Daily Health Challenge</h2>
+
+    <div class="challenge-list">
+
+        <label>
+            <input type="checkbox">
+            Drink 8 glasses of water 💧
+        </label>
+
+        <br><br>
+
+        <label>
+            <input type="checkbox">
+            Exercise for 30 minutes 🏃
+        </label>
+
+        <br><br>
+
+        <label>
+            <input type="checkbox">
+            Sleep before 11 PM 😴
+        </label>
+
+        <br><br>
+
+        <label>
+            <input type="checkbox">
+            Eat healthy food 🥗
+        </label>
+
+        <br><br>
+
+        <label>
+            <input type="checkbox">
+            Practice meditation 🧘
+        </label>
+
+    </div>
+
+</div>
+
+        <!-- Daily Motivation -->
+        <div class="card">
+
+            <h2>Daily Motivation</h2>
+
+            <button onclick="generateQuote()">
+                Generate Quote
+            </button>
+
+            <p id="quoteResult">
+                Click the button for motivation 💙
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
